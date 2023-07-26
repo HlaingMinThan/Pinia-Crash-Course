@@ -1,6 +1,6 @@
 <template>
-  <h1>Counter - {{count}}</h1>
-  <h1>{{myName}}</h1>
+  <h1>Count - {{count}}</h1>
+  <h1>Double Count - {{doubleCount}} </h1>
 </template>
 
 <script>
@@ -12,7 +12,7 @@ export default {
     myName() {
       return "Hlaing min than";
     },
-    ...mapState(useCounter,['count'])
+    ...mapState(useCounter,['count','doubleCount'])
   }
 }
 </script>
